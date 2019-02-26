@@ -8,7 +8,7 @@ const app = express();
 
 // Mongo stuff 
 
-const uri = process.env.MONGODB_URI || `mongodb://localhost/dogs`;
+const uri = process.env.MONGODB_URI;
 mongoose
   .connect(uri, { useNewUrlParser: true })
   .then(x => {
